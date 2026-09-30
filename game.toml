@@ -6,7 +6,9 @@ name = "King's Field"
 id = "SLPS-00017"
 players = 1
 exe = "disc/PSX.EXE"
-disc = ""
+disc = "disc/King's Field (Japan).cue"
+discs = ["disc/King's Field (Japan).cue"]
+disc_serials = ["SLPS-00017"]
 load_address = "0x80010000"
 entry_pc = "0x80010100"
 text_size = "0x00000800"
@@ -15,8 +17,8 @@ stack_base = "0x656B6166"
 # Digests are for data Track 01 (first BINARY FILE / TRACK 01).
 [prepare_disc]
 out_dir = "disc"
-bin_name = "disc1.bin"
-cue_name = "disc1.cue"
+bin_name = "King's Field (Japan).bin"
+cue_name = "King's Field (Japan).cue"
 boot_exe = "PSX.EXE"
 known_sizes = [30378432]
 known_md5 = [
@@ -30,11 +32,13 @@ known_crc32 = [
 ]
 
 [recompiler]
+bios_config = "psxrecomp/bios/SCPH5500.toml"
 seeds = "seeds/ghidra_funcs.txt"
 out_dir = "generated"
 strict = true
 
 [runtime]
+openbios = false
 window_title = "King's Field Recompiled"
 memcard_dir = "saves"
 
