@@ -27,6 +27,16 @@ Scaffolded with the New Project Layout. See
 **BIOS:** SCPH-5500 (Japan) retail BIOS, 524288 bytes, SHA-256 `9c0421858e217805f4abe18698afea8d5aa36ff0727eb8484944e00eb5e7eadb`. Supply your own dump; releases do not use OpenBIOS.
 <!-- /release-standard:bios -->
 
+## Status
+
+Latest release: v0.3.8, built on psxrecomp pin I 0.1.23.
+
+- Packages for Windows x64, Linux x64, macOS Apple Silicon and macOS Intel passed the CI build and package checks.
+- No recorded route of this title has been played on pin I 0.1.23 yet.
+- Not claimed: full-game completion, audio fidelity or multiplayer. Setup and gameplay reports from Linux, macOS and Steam Deck are welcome.
+
+Known issues for the current version are in its [release notes](https://github.com/alexbeavs-ps1-ports/kings-field-recomp/releases/tag/v0.3.8).
+
 <!-- retcomm-readme-launcher -->
 ## RetComM Launcher
 
@@ -147,9 +157,3 @@ writes most of the code; the evidence discipline decides what survives.
 Bug reports welcome - expect them to be investigated the same way.
 
 tl;dr AI writes the code, but I always test it myself before pushing
-
-## v0.3.5 three-platform candidate
-
-The next release targets Windows x64, Linux x64, macOS Apple Silicon ARM64,
-and macOS Intel x64. These packages remain candidates until the exact archives
-pass the required native setup, startup, responsiveness, and clean-exit gates.
